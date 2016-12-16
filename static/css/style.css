@@ -1,0 +1,543 @@
+body {
+    height: 100%;
+    background: linear-gradient(180deg, white 50%, #f29f01 50%);
+}
+body a{
+        color: black;
+    text-decoration: none; 
+}
+
+#banner {
+    width: 100%;
+    height: 30%;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-size: 6vh;
+    letter-spacing: 0.5vh;
+    margin-top: 10vh;
+}
+ 
+#idbanner{
+    font-family: 'Raleway';
+    font-weight: bold;
+    font-size: 50px;
+    letter-spacing: 0.5vh;
+}
+ #subline {
+         font-family: "Goudy Bookletter", sans-serif;
+    font-size: 2.5vh;
+ }
+.ch-grid {
+	margin: 20px 0 0 0;
+	padding: 0;
+	list-style: none;
+	display: block;
+	text-align: center;
+	width: 100%;
+}
+
+.ch-grid:after,
+.ch-item:before {
+	content: '';
+    display: table;
+}
+
+.ch-grid:after {
+	clear: both;
+}
+
+.ch-grid li {
+	width: 220px;
+	height: 220px;
+	display: inline-block;
+	margin: 20px;
+}
+.ch-item {
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	position: relative;
+	cursor: default;
+	box-shadow: 
+		inset 0 0 0 0 rgba(200,95,66, 0.4),
+		inset 0 0 0 16px rgba(255,255,255,0.6),
+		0 1px 2px rgba(0,0,0,0.1);
+	transition: all 0.4s ease-in-out;
+}
+.ch-img-1 { 
+	background-image: url(../images/chennai.jpg); 
+} 
+
+.ch-img-2 { 
+	background-image: url(../images/gandhi.jpg);
+}
+
+.ch-img-3 { 
+	background-image: url(../images/temples.jpg); 
+}
+.ch-info {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	overflow: hidden;
+	opacity: 0;
+	transition: all 0.4s ease-in-out;
+	transform: scale(0);
+	backface-visibility: hidden;
+}
+.ch-info h3 {
+	color: #fff;
+	text-transform: uppercase;
+	position: relative;
+	letter-spacing: 2px;
+	font-size: 22px;
+	margin: 0 30px;
+	padding: 65px 0 0 0;
+	height: 110px;
+	font-family: 'Open Sans', Arial, sans-serif;
+	text-shadow: 
+		0 0 1px #fff, 
+		0 1px 2px rgba(0,0,0,0.3);
+}
+
+.ch-info p {
+	color: #fff;
+	padding: 10px 5px;
+	font-style: italic;
+	margin: 0 30px;
+	font-size: 12px;
+	border-top: 1px solid rgba(255,255,255,0.5);
+}
+
+.ch-info p a {
+	display: block;
+	color: rgba(255,255,255,0.7);
+	font-style: normal;
+	font-weight: 700;
+	text-transform: uppercase;
+	font-size: 9px;
+	letter-spacing: 1px;
+	padding-top: 4px;
+	font-family: 'Open Sans', Arial, sans-serif;
+}
+
+.ch-info p a:hover {
+	color: rgba(255,242,34, 0.8);
+}
+.ch-item:hover {
+	box-shadow: 
+		inset 0 0 0 110px rgba(200,95,66, 0.4),
+		inset 0 0 0 16px rgba(255,255,255,0.8),
+		0 1px 2px rgba(0,0,0,0.1);
+}
+.ch-item:hover .ch-info {
+	opacity: 1;
+	transform: scale(1);	
+}
+.basic-grey {
+    margin-left:auto;
+    margin-right:auto;
+    max-width: 500px;
+    background: #F7F7F7;
+    padding: 25px 15px 25px 10px;
+    color: #888;
+    text-shadow: 1px 1px 1px #FFF;
+    border:1px solid #374D3C;
+}
+.basic-grey h2 {
+    font-size: 25px;
+    padding: 0px 0px 10px 40px;
+    display: block;
+    border-bottom:1px solid #E4E4E4;
+    margin: -10px -15px 30px -10px;;
+    color: #4A6751;
+    font-family: 'Raleway', sans-serif;
+ 
+}
+.basic-grey h2>span {
+    display: block;
+    font-size: 11px;
+}
+.basic-grey label {
+    display: block;
+    margin: 0px;
+}
+.basic-grey label>span {
+    float: left;
+    width: 20%;
+    text-align: right;
+    padding-right: 10px;
+    margin-top: 10px;
+    font-family: "Goudy Bookletter", sans-serif;
+   
+    color: #4A6751;
+}
+#options{
+    margin-left: 15px;
+    float:left;
+}
+.basic-grey input[type="text"], .basic-grey input[type="email"], .basic-grey textarea, .basic-grey select {
+    border: 1px solid #DADADA;
+    color: #888;
+    height: 30px;
+    margin-bottom: 16px;
+    margin-right: 6px;
+    margin-top: 2px;
+    outline: 0 none;
+    padding: 3px 3px 3px 5px;
+    width: 70%;
+    font-size: 12px;
+    line-height:15px;
+    box-shadow: inset 0px 1px 4px #ECECEC;
+    -moz-box-shadow: inset 0px 1px 4px #ECECEC;
+    -webkit-box-shadow: inset 0px 1px 4px #ECECEC;
+}
+.basic-grey textarea{
+    padding: 5px 3px 3px 5px;
+}
+.basic-grey select {
+    background: #FFF url('down-arrow.png') no-repeat right;
+    background: #FFF url('down-arrow.png') no-repeat right;
+    appearance:none;
+    -webkit-appearance:none; 
+    -moz-appearance: none;
+    text-indent: 0.01px;
+    text-overflow: '';
+    width: 70%;
+    height: 35px;
+    line-height: 25px;
+}
+
+.basic-grey textarea{
+    height:100px;
+}
+.basic-grey .button {
+    background: #374D3C;
+    border: none;
+    padding: 10px 25px 10px 25px;
+    color: #FFF;
+    box-shadow: 1px 1px 5px #B6B6B6;
+    border-radius: 3px;
+    text-shadow: 1px 1px 1px #374D3C;
+    cursor: pointer;
+}
+.basic-grey .button:hover {
+    background: #4A6751;
+}
+.basic-grey .submit {
+    background: #374D3C;
+    border: none;
+    padding: 10px 25px 10px 25px;
+    color: #FFF;
+    box-shadow: 1px 1px 5px #B6B6B6;
+    border-radius: 3px;
+    text-shadow: 1px 1px 1px #374D3C;
+    cursor: pointer;
+}
+.basic-grey .submit:hover {
+    background: #4A6751;
+}
+
+
+/* Box styles */
+.myBox {
+border: none;
+margin-left: 200px;
+padding: 5px;
+width: 200px;
+height: 350px;
+overflow: scroll;
+font-family: "Goudy Bookletter", sans-serif;
+    font-size: 16px;
+    line-height:20px; 
+background: white;
+}
+.myBox li{
+    margin: 10px 0;
+}
+.myBox li a{
+    color: black;
+    text-decoration: none;
+ 
+}
+.modal-body h2{
+    font-family: "Goudy Bookletter", sans-serif;
+    font-size: 14px;
+    display:inline-block;
+}
+.myBox li:hover{
+    background-color: yellowgreen;
+}
+/* Scrollbar styles */
+::-webkit-scrollbar {
+width: 12px;
+height: 12px;
+}
+
+::-webkit-scrollbar-track {
+background: gold;
+border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+border-radius: 10px;
+background: yellowgreen;  
+}
+
+::-webkit-scrollbar-thumb:hover {
+background: #88ba1c;  
+}
+
+.modal-content{
+    border-radius: 0px;
+    border: 3.5px solid yellowgreen;
+}
+
+.modal-header{
+    font-family: 'Raleway', sans-serif;
+}
+.modal-body{
+    font-family: 'Raleway', sans-serif;
+}
+.btn-default{
+        text-shadow: 1px 1px 1px #374D3C;
+            background: #374D3C;
+            color:white;
+}
+
+#listofofficials{
+     font-family: 'Raleway', sans-serif;
+         font-size: 22px;
+         margin-left: 200px;
+
+}
+.aboutbox {
+    margin-left:auto;
+    margin-right:auto;
+    max-width: 500px;
+    height: 400px;
+    background: #F7F7F7;
+    padding: 25px 15px 25px 10px;
+    color: #888;
+    text-shadow: 1px 1px 1px #FFF;
+    border:3.5px solid #374D3C;
+}
+#abouttitle {
+         font-family: 'Raleway', sans-serif;
+         font-size: 22px;
+    border-bottom:     1px solid #374D3C;
+    color: black;     
+}
+.modaltitle{
+	         font-family: 'Raleway', sans-serif;
+         font-size: 22px;
+    border-bottom:     1px solid #374D3C;
+    color: black;
+}
+#aboutpara{
+    font-family: "Goudy Bookletter", sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+
+}
+.footer-distributed{
+	background-color: #374D3C;
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+	width: 100%;
+    font-size: 13px;
+    font-family: "Goudy Bookletter", sans-serif;	text-align: left;
+
+	padding: 30px 20px 20px 20px;
+	margin-top: 80px;
+	overflow: hidden;
+}
+
+/* Footer left */
+
+.footer-distributed .footer-left{
+	float: left;
+}
+
+/* The company logo */
+
+.footer-distributed h3{
+	color:  #ffffff;
+    font-size: 28px;
+font-family: "Goudy Bookletter", sans-serif;
+	margin: 0 0 10px;
+}
+
+.footer-distributed h3 span{
+	color:  #5383d3;
+}
+
+/* Footer links */
+
+.footer-distributed .footer-links{
+	color:  #ffffff;
+	margin: 0 0 10px;
+	padding: 0;
+}
+
+.footer-distributed .footer-links a{
+	display:inline-block;
+	line-height: 1.8;
+	text-decoration: none;
+	color:  inherit;
+}
+
+.footer-distributed .footer-company-name{
+	color:  #8f9296;
+	font-size: 14px;
+	font-weight: normal;
+	margin: 0;
+}
+
+/* Footer social icons */
+
+.footer-distributed .footer-icons{
+	margin-top: 40px;
+}
+
+.footer-distributed .footer-icons a{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	background-color:  #33383b;
+	border-radius: 2px;
+
+	font-size: 20px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 35px;
+
+	margin-right: 3px;
+	margin-bottom: 5px;
+}
+
+/* Footer Right */
+
+.footer-distributed .footer-right{
+	float: right;
+}
+
+.footer-distributed .footer-right p{
+	display: inline-block;
+	vertical-align: top;
+	margin: 15px 42px 0 0;
+	color: #ffffff;
+}
+
+/* The contact form */
+
+.footer-distributed form{
+	display: inline-block;
+}
+
+.footer-distributed form input,
+.footer-distributed form textarea{
+	display: block;
+	border-radius: 3px;
+	box-sizing: border-box;
+	background-color:  #1f2022;
+	box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.1);
+	border: none;
+	resize: none;
+
+	font: inherit;
+	font-size: 14px;
+	font-weight: normal;
+	color:  #d1d2d2;
+
+	width: 400px;
+	padding: 18px;
+}
+
+.footer-distributed ::-webkit-input-placeholder {
+	color:  #5c666b;
+}
+
+.footer-distributed ::-moz-placeholder {
+	color:  #5c666b;
+	opacity: 1;
+}
+
+.footer-distributed :-ms-input-placeholder{
+	color:  #5c666b;
+}
+
+
+.footer-distributed form input{
+	height: 55px;
+	margin-bottom: 15px;
+}
+
+.footer-distributed form textarea{
+	height: 100px;
+	margin-bottom: 20px;
+}
+
+.footer-distributed  button{
+	border-radius: 3px;
+	background-color:  white;
+	color: black;
+	border: 0;
+	padding: 10px 30px;
+	display:inline-block;
+}
+
+/* If you don't want the footer to be responsive, remove these media queries */
+
+@media (max-width: 1000px) {
+
+	.footer-distributed {
+		font: bold 14px sans-serif;
+	}
+
+	.footer-distributed .footer-company-name{
+		font-size: 12px;
+	}
+
+	.footer-distributed form input,
+	.footer-distributed form textarea{
+		width: 250px;
+	}
+
+	.footer-distributed form button{
+		padding: 10px 35px;
+	}
+
+}
+
+@media (max-width: 800px) {
+
+	.footer-distributed{
+		padding: 30px;
+	}
+
+	.footer-distributed .footer-left,
+	.footer-distributed .footer-right{
+		float: none;
+		max-width: 300px;
+		margin: 0 auto;
+	}
+
+	.footer-distributed .footer-left{
+		margin-bottom: 40px;
+	}
+
+	.footer-distributed form{
+		margin-top: 30px;
+	}
+
+	.footer-distributed form{
+		display: block;
+	}
+
+	.footer-distributed form button{
+		float: none;
+	}
+}
