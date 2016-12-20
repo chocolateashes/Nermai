@@ -253,10 +253,35 @@ font-family: "Goudy Bookletter", sans-serif;
     line-height:20px; 
 background: white;
 }
+
+.myBoxtop {
+border: none;
+    margin-left:auto;
+    margin-right:auto;
+    max-width: 300px;
+padding: 5px;
+
+height: 350px;
+overflow: scroll;
+font-family: "Goudy Bookletter", sans-serif;
+    font-size: 16px;
+    line-height:40px; 
+background: white;
+}
+
 .myBox li{
     margin: 10px 0;
 }
 .myBox li a{
+    color: black;
+    text-decoration: none;
+ 
+}
+
+.myBoxtop li{
+    margin: 10px 0;
+}
+.myBoxtop li a{
     color: black;
     text-decoration: none;
  
@@ -267,6 +292,9 @@ background: white;
     display:inline-block;
 }
 .myBox li:hover{
+    background-color: yellowgreen;
+}
+.myBoxtop li:hover{
     background-color: yellowgreen;
 }
 /* Scrollbar styles */
@@ -540,4 +568,13 @@ font-family: "Goudy Bookletter", sans-serif;
 	.footer-distributed form button{
 		float: none;
 	}
+}
+
+#aboutimage {
+	margin-left:auto;
+	margin-right: auto;
+	max-width: 300px;
+	max-height: 400px;
+	background-image: url(../images/tamilnadu2.jpg);
+
 }
